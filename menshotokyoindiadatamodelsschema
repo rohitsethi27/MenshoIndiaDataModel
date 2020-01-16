@@ -1,0 +1,25 @@
+CREATE TABLE ` Input Planning for Central kitchen` (`Country`, `Language`, `Year`, `Week no.`, `Item Code`, `Projection week start date 1`, `Projection week start date 2`, `Projection week start date 3`, `Projection week start date 4`, `Projection week start date 5`, `Projection week start date 6`, `Projection week start date 7`, `User id`, `Date and Time`);
+
+CREATE TABLE `Org Unit Setup Table` (`Language Code`, `Country`, `Org Unit Type`, `Org Unit Id`, `Org Unit Desc`, `Org Unit  Address-1`, `Org Unit  Address-2`, `Org Unit City`, `Org Unit Zip Code`, `Org Unit Phone No`, `Org Unit Email Address`, `Org Unit Central Kitchen`, `Currency Unit`, `Weekly day off`);
+
+CREATE TABLE `Item Receipe Master` (`Language Code`, `Country`, `Central Kitchen Code`, `Outlet Code`, `Receipe Id`, `S No`, `Item No`, `Quantity`, `Unit of Measure`, `Measuring Method`, `Veg or Non Veg`);
+
+CREATE TABLE `Table Vendor Master` (`Language code`, `Vendor`, `Vendor Name`, `Address`, `Contact person`, `Phone No`, `Email`, `Whatsapp no`, `Bank Number and Details`, `Domestic or Forgein`, `Payment Terms`);
+
+CREATE TABLE `Output Planning for Outlet and Central Kitchen` (`Country`, `Language`, `Org Unit Type`, `Org Unit`, `Year`, `Week Number`, `Menu Item No`, `Item No`, `Receipe Id`, `Projection Week Start Date 1`, `Projection Week Start Date 2`, `Projection Week Start Date 3`, `Projection Week Start Date 4`, `Projection Week Start Date 5`, `Projection Week Start Date 6`, `Projection Week Start Date 7`, `user id`, `date and time`);
+
+CREATE TABLE `Org Unit Menu` (`Country`, `Language`, `Central Kitchen Code`, `Outlet Code`, `Ver No`, `Menu Item No.`, `Menu Item Description`, `Receipe Id`, `Valid Flag`, `User Id`, `date and time`, `Time`);
+
+CREATE TABLE `User Registration Table` (`User Id`, `User Name`, `User Address`, `Mobile No`, `Whatsapp No`, `Email`, `Country`, `Org Unit Type`, `Org Unit Code`, `Language Code`, `Password`, `Valid From`, `Valid To`, `Creation Date`, `Create Time`, `Mod Date`, `Mod Time`, `User Delete Flag`);
+
+CREATE TABLE `Menu for Outlet or Central Kitchen` (`Language Code`, `Country`, `Org unit type`, `Org unit code`, `Menu Item No`, `Menu Item Picture`, `Ordering Unit`, `Ordering Quantity`, `Fast Moving /Slow Moving Flag`, `Veg or Non Veg`, `Receipe Id`, `Status`, `Delete Flag`);
+
+CREATE TABLE `Org Unit Input Plan` (`Country`, `Language`, `Org Unit Type`, `Org Unit Code`, `Year`, `Week Number`, `Item Code`, `Menu Item No`, `Projection week start date 1`, `Projection week start date 2`, `Projection week start date 3`, `Projection week start date 4`, `Projection week start date 5`, `Projection week start date 6`, `Projection week start date 7`, `user id`, `date and time`);
+
+CREATE TABLE `Item Master` (`Language Code`, `Country`, `Central Kitchen Code`, `Item No`, `Item Description`, `Created On`, `Date of Last Change`, `Item Type`, `Material Group`, `Unit of Measure`, `Purhasing Unit of Measure`, `Liquid, Solid, Powder`, `Source of Supply`, `Storage Type`, `Storage Temp`, `Preparation Unit of Measure`, `Deletion Flag`);
+
+CREATE TABLE `Calendar` (`Country`, `Central Kitchen`, `Year`, `Week Number`, `Week Start Date`);
+
+CREATE TABLE `Item Requisition Table` (`Country`, `Language Code`, `Org Unit Code`, `Year`, `Week Number`, `Central Kitchen Code`, `Item Code`, `Projection Week Start Date 1`, `Projection week start date 2`, `Projection week start date 3`, `Projection week start date 4`, `Projection week start date 5`, `Projection week start date 6`, `Projection week start date 7`, `User id`, `date and time`);
+
+CREATE TABLE `Table Source List` (`Language Code`, `Org Unit Flag`, `Org Unit Code`, `Mensho Item No`, `S No`, `Prefered Vendor Flag`, `Vendor No`, `Vendor Item No`, `Price`, `Packaging Type`, `Package Qty`, `Unit of Measure`, `Lead Time`, `Vendor Currency`, `Transaction Currency`, `Local Currency`);
